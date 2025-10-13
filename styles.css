@@ -1,0 +1,64 @@
+body {
+    background-color: hsl(196, 27%, 37%);
+    color:rgb(0, 0, 0);
+    font-size: 150%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(https://cdn.wcs.org/2024/03/13/21/14/05/2d2c6f1b-71c4-4390-b7e2-deb21a0bc11f/shutterstock_2331893385.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin:0px;
+}
+
+a:link {
+    color:rgba(201, 110, 87, 0.993);
+}
+a:visited {
+    color:crimson;
+}
+a:hover {
+    color:darkgreen;
+}
+a:active {
+    color:gold;
+}
+
+h1 {
+    background-color: rgb(78, 155, 155);
+    padding: 10px;
+    text-align:center
+}
+
+.iconheader {
+    height: 8vh;
+    padding: 6%;
+}
+
+.pageheader {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:rgb(78, 155, 155);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8%;
+
+
+}
+
+.navlinks a {
+    text-decoration: none;
+    font-size: 3vh;
+    padding: 6px;
+}
+
+.navicon {
+    height: 4vh;
+}
+
+.navigationicon {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    gap: 20%;
+    margin-right: 2%;
+}
