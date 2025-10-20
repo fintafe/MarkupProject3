@@ -6,6 +6,7 @@
     <title>Tiptoe Soles</title>
     <link rel="icon" href="logoicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="pageheader">
@@ -31,10 +32,19 @@
             <input type="search"  name="keywords" id="keywords" placeholder="Search for products">
             <button type="submit"><img src="searchbutton.svg"></button>
         </form>
-        <nav class="navigationicon">
-            <a href="account.html"><img src="account.png" alt="Account" class="navicon"></a>
-            <a href="wishlist.html"><img src="wishlist.png" alt="Wishlist" class="navicon"></a>
-            <a href="cart.html"><img src="cart.png" alt="Shopping cart" class="navicon"></a>
+        <nav class="navigationicon" id="usernav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">Wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sr-only">Shopping Cart</span>
+            </a>
         </nav>
     </header>
     <h1>Home page</h1>
