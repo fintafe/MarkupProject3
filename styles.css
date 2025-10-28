@@ -81,9 +81,26 @@ a:active {color:gold;}
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height:45vh;
     background-color: turquoise;
     flex-direction: column;
+    background-size: cover;
+    text-shadow: 0px 0px 4px black;
+    color:rgb(255, 166, 0);
+}
+
+
+.slide:nth-child(1) {
+    background-image: url(images/slides/pumpkin.jpg);
+    background-position: center;
+}
+
+.slide button {
+    padding:8px;
+    background-color: rgb(255, 166, 0);
+    min-width:200px;
+    border:solid 1px;
+    border-radius: 4px;;
 }
 
 /* KEEP THIS AT THE BOTTOM OR IT WILL BREAK */
