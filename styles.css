@@ -142,6 +142,42 @@ nav a {
     border-radius: 4px;;
 }
 
+.maincontent {
+    max-width: 90%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.prodCard img {
+    max-width:100%;
+}
+
+.cardcontent {
+    padding: 8px;
+}
+
+.prodCard button {
+    min-width: 100%;
+    padding: 12px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 10px;
+}
+
+.prodCard{
+    flex: 1;
+    background-color: antiquewhite;
+    border: 2px solid;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 /* KEEP THIS AT THE BOTTOM OR IT WILL BREAK */
 @media screen and (max-width: 480px) {
     .navlinks {
