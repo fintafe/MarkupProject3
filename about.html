@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiptoe Soles- About</title>
     <link rel="icon" href="logoicon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
+    <!-- header -->
     <header class="pageheader">
+        <button class="navbutton" id="menubutton">
+            <img src="burgerbutton.svg" alt="menu button icon">
+        </button>
         <a href="index.html" class="logolink">
             <img src="logoicon.png" class="iconheader" alt="Tiptoe Soles Logo">
         </a>
@@ -21,16 +29,90 @@
             <a href="services.html">Services</a>
             <a href="about.html">About</a>
         </nav>
-        <form id="search" method="get" action="">
+        <form id="search" method="get" action="/formdata">
             <input type="search"  name="keywords" id="keywords" placeholder="Search for products">
-            <button type="submit">Search</button>
+            <button type="submit"><img src="searchbutton.svg" alt="search button icon"></button>
         </form>
-        <nav class="navigationicon">
-            <a href="account.html"><img src="account.png" alt="Account" class="navicon"></a>
-            <a href="wishlist.html"><img src="wishlist.png" alt="Wishlist" class="navicon"></a>
-            <a href="cart.html"><img src="cart.png" alt="Shopping cart" class="navicon"></a>
+        <nav class="navigationicon" id="usernav">
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span class="sr-only">Account</span>
+            </a>
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                <span class="sr-only">Wishlist</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="sr-only">Shopping Cart</span>
+            </a>
         </nav>
     </header>
-    </header>
-    <h1>About page</h1>
+    <!-- banner -->
+    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="slide">
+            <h2>Halloween Sale</h2>
+            <button>Shop Halloween</button>
+        </div>
+        <div class="slide">
+            <h2>Two</h2>
+            <button>Shop Halloween</button>
+        </div>
+        <div class="slide">
+            <h2>Three</h2>
+            <button>Shop Halloween</button>
+        </div>
+        <div class="slide">
+            <h2>Four</h2>
+            <button>Shop Halloween</button>
+        </div>
+    </div>
+    <!-- contact -->
+    <main class="maincontent">
+        <div class="cardContainer contact">
+            <div class="prodCard">
+                <!-- about -->
+                 <h3>About Us</h3>
+                 <p class="smalltext">TipToe Soles is an Australian owned and operated company.  
+                 We aim to provide comfortable footwear at affordable prices to customers within Australia and around the world.</p>
+            </div>
+            <div class="prodCard">
+                <!--  -->
+                <h3>Testimonials</h3>
+                <p class="smalltext">"Tiptoe Soles is the greatest company ever made."</p>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="mainfooter">
+        <nav class="footernav">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">Policies</a>
+        </nav>
+        <nav class="socialnav">
+            <a href="https://facebook.com">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://instagram.com">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://tiktok.com">
+                <i class="fa-brands fa-tiktok"></i>
+                <span class="sr-only">Tiktok</span>
+            </a>
+            <a href="https://linkedin.com">
+                <i class="fa-brands fa-square-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+        </nav>
+        <nav class="legalnav">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Copyright</a>
+            <a href="#">Terms and Conditions</a>
+        </nav>
+    </footer>
+</body>
 </html>

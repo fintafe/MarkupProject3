@@ -2,7 +2,7 @@ body {
     background-color: hsl(196, 27%, 37%);
     color:rgb(0, 0, 0);
     font-size: 180%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin:0px;
     padding: 0px;
     min-height:100vh;
@@ -10,10 +10,10 @@ body {
     grid-template-rows: auto auto 1fr auto ;
 }
 
-a:link {color:rgba(201, 110, 87, 0.993);}
-a:visited {color:crimson;}
-a:hover {color:darkgreen;}
-a:active {color:gold;}
+a:link {color:rgba(9, 44, 110, 0.993);}
+a:visited {color:rgb(69, 78, 209);}
+a:hover {color:rgb(82, 114, 221);}
+a:active {color:rgb(71, 51, 247);}
 
 .iconheader {
     height: 10vh;
@@ -23,7 +23,7 @@ a:active {color:gold;}
 .pageheader {
   display: flex;
   flex-wrap: wrap;
-  background-color:rgb(108, 132, 141);
+  background-color:rgb(138, 164, 173);
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -108,6 +108,7 @@ nav a {
     min-width: 100%;
     flex-direction: row;
     gap: 3em;
+    flex-wrap:wrap;
 }
 
 .footernav a, .legalnav a {
@@ -156,6 +157,22 @@ nav a {
     gap: 1em;
 }
 
+.cardContainer.contact{
+    flex-wrap: wrap;
+}
+
+.cardContainer.contact .prodCard{
+    max-width: 95vw;
+    margin:auto;
+}
+
+.cardContainer2{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
 .prodCard img {
     max-width:100%;
 }
@@ -173,13 +190,11 @@ nav a {
 
 .prodCard{
     flex: 1;
-    background-color: antiquewhite;
+    background-color: rgb(178, 199, 211);
     border: 2px solid;
     border-radius: 15px;
     overflow: hidden;
 }
-
-
 
 /* banner 2 */
 .banner2 {
@@ -195,6 +210,25 @@ nav a {
 
 .banner2 button {
     width: 30%;
+}
+
+.contact-form {
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: .7em;
+}
+
+.row {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.smalltext {
+    font-size:medium;
 }
 
 /* KEEP THIS AT THE BOTTOM OR IT WILL BREAK */
