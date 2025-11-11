@@ -135,6 +135,11 @@ nav a {
     background-position: center;
 }
 
+.slide:nth-child(2) {
+    background-image: url(images/slides/winter.jpg);
+    background-position: center;
+}
+
 .slide button {
     padding:8px;
     background-color: rgb(255, 166, 0);
